@@ -40,7 +40,7 @@ foreach ($quake in $data.features) {
     Write-Output $message
 
     # Show toast notification
-    New-BurntToastNotification -Text "🌍 Earthquake Alert", $message
+    New-BurntToastNotification -Text "Earthquake Alert", $message
 
     # Append to log file
     Add-Content -Path $logFilePath -Value $message
